@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Content</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="setPage()">
+
+  <div id="curtain" class="curtain" onclick="toggleContent()">
+    <div class="brand">Jermis Buchclub</div>
+    <div><nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Galerie</a></li>
+          <li><a href="#">Kalender</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="font-size: 50px;"><p>Herzlich Wilkommen!</p></div>
+  </div>
+
+  <div id="content" class="content">
+    <div class="content_content">
+      <p class="text_aunt">WELCOME TO YOUR AUNTIE ERA!</p>
+      <img class="content_img" src="src/Foto.jpg" >
+      <img class="kinderwagen" src="src/Foto_Babywagen.png"
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

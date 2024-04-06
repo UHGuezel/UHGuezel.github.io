@@ -1,0 +1,124 @@
+body {
+  background-color: #FFFFB7;
+  
+}
+
+.curtain,
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.curtain {
+  visibility: visible;
+  background-color:#9af77e;
+  width: 100vw; /* Set width to viewport width */
+  height: 100%; /* Set height to 100% of parent container */
+  display: flex;
+  flex-direction: column; /* Set flex-direction to column */
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.content_img {
+  width: 50%;
+  height: 50%;
+}
+
+.kinderwagen {
+  position: relative;
+  width: 30%;
+  margin-left: 60%;
+  margin-top: -20%
+}
+
+.text_aunt {
+  font-size: 70px;
+  color: #0db8ac;
+  font-weight: 900;
+  margin-left: -40%;
+  margin-bottom: 5%;
+  transform: rotate(-15deg);
+}
+
+.content {
+  visibility: hidden;
+  position: fixed; /* Change position to fixed */
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 9999; /* Ensure the overlay appears above other content */
+}
+
+.content_content {
+  display: flex;
+  flex-direction: column; /* Set flex-direction to column */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text horizontally */
+  margin-top: 50px; /* Add margin at the top */
+  width: 80%; /* Make sure it takes up the full width */
+  height: 100%; /* Make sure it takes up the full height */
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px; /* Add margin for spacing */
+  position: absolute; /* Set position to absolute */
+  top: 10px; /* Adjust top position */
+  left: 70px; /* Adjust left position */
+}
+
+nav {
+  background-color: #333;
+  width: calc(100% - 120px); /* Adjust width to account for brand width and some margin */
+  height: 50px;
+  position: fixed;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOutAnimation {
+  animation: fadeOut 3s forwards; /* Adjust animation duration as needed */
+}
