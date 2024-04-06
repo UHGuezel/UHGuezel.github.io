@@ -1,6 +1,6 @@
 body {
   background-color: #FFFFB7;
-  
+  overflow: hidden;
 }
 
 .curtain,
@@ -37,7 +37,7 @@ body {
 }
 
 .text_aunt {
-  font-size: 70px;
+  font-size: 57px;
   color: #0db8ac;
   font-weight: 900;
   margin-left: -40%;
